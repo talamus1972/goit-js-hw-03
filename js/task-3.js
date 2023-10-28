@@ -1,6 +1,11 @@
 function filterArray(numbers, value) {
-
-    for (let i = 0; i < planets.length; i += 1)
+  let array3 = [];
+  for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] > value) {
+      array3.push(numbers[i]);
+    }
+  }
+  return array3;
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
